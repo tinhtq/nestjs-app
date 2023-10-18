@@ -1,8 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { Controller } from '@nestjs/common'
+import { TasksService } from './tasks.service'
 
 @Controller('tasks')
 export class TasksController {
-    constructor() {
-        
-    }
+  constructor(tasksService: TasksService) {
+    console.log('hello')
+  }
 }

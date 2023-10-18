@@ -4,6 +4,6 @@ import { AppService } from './app.service';
 import { TasksModule } from './tasks/tasks.module';
 
 @Module({
-  imports: [TasksModule]
+  imports: [TasksModule],
 })
 export class AppModule {}

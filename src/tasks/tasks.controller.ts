@@ -4,6 +4,6 @@ import { TasksService } from './tasks.service'
 @Controller('tasks')
 export class TasksController {
   constructor(tasksService: TasksService) {
-    console.log('hello')
+    this.tasksService = tasksService
   }
 }
